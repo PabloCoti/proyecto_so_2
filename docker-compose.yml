@@ -1,0 +1,14 @@
+version: '1'
+services:
+  app:
+    container_name: sistemas_operativos
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+      args:
+        APP_ENV: local
+    image: sistemas-operativos
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
