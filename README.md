@@ -5,12 +5,9 @@ En este proyecto se hace la dockerización de un proyecto desarrollado con djang
 
 
 ## Cómo armar contenedor de docker
-Para armar el contenedor de docker se tiene que ejecutar los siguientes comandos  
+Para armar el contenedor de docker se tiene que ejecutar el siguiente comando 
 ```
-docker build -t proyecto-so .
-```  
-```
-docker run --name proyecto_so -p 8000:8000 -d proyecto-so
+docker compoes up -d
 ```
 
 Luego de armar el contenedor de docker las migraciones se tienen que correr dentro del contenedor utilizando
@@ -22,4 +19,3 @@ Luego de correr las migraciones crear el usuario de admin
 ```
 docker exec -it proyecto_so python manage.py createsuperuser
 ```
-# HACER FETCH Y PULL DE DEVELOP, NO BORAR LOS NOMBRES DE LOS OTROS COMPAÑEROS 
