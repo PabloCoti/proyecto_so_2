@@ -22,3 +22,4 @@ Luego de correr las migraciones crear el usuario de admin
 ```
 docker exec -it proyecto_so python manage.py createsuperuser
 ```
+# HACER FETCH Y PULL DE DEVELOP, NO BORAR LOS NOMBRES DE LOS OTROS COMPAÑEROS 
